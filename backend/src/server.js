@@ -94,9 +94,9 @@ async function startServer() {
   }
 
   // Start Express server
-  app.listen(PORT, () => {
+  app.listen(PORT, '0.0.0.0', () => {
     console.log(`Server running on port ${PORT}`);
-    console.log(`http://localhost:${PORT}`);
+    console.log(`http://0.0.0.0:${PORT}`);
     console.log(`Environment: ${process.env.NODE_ENV || 'development'}`);
     if (!databaseConnected) {
       console.log('Database is unavailable. Search endpoints work, tracking/history endpoints require PostgreSQL.');
