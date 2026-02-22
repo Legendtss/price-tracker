@@ -1,0 +1,14 @@
+{
+  "name": "price-tracker",
+  "version": "1.0.0",
+  "description": "Price Tracker - Multi-platform price comparison",
+  "private": true,
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "install:all": "cd backend && npm install && cd ../frontend && npm install",
+    "start": "cd backend && npm start",
+    "dev": "cd backend && npm run dev"
+  }
+}
