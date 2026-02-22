@@ -7,7 +7,7 @@ import './index.css';
 
 function App() {
   return (
-    <Router>
+    <Router basename="/price-tracker">
       <div className="min-h-screen bg-gray-50">
         {/* Navigation */}
         <nav className="bg-white shadow-md sticky top-0 z-50">
